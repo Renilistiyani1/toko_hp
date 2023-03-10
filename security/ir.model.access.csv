@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_toko_handphone,access.toko.handphone,model_toko_handphone,,1,1,1,1,
+access_toko_hp_partner,access.toko_hp.partner,model_toko_hp_partner,,1,1,1,1,
+access_toko_hp_pegawai,access.toko_hp.pegawai,model_toko_hp_pegawai,,1,1,1,1,
+access_toko_hp_pembeli,access.toko_hp.pembeli,model_toko_hp_pembeli,,1,1,1,1,
+access_toko_hp_order,access.toko_hp.order,model_toko_hp_order,,1,1,1,1,
+access_toko_hp_orderhandphonedetail,access.toko_hp.orderhandphonedetail,model_toko_hp_orderhandphonedetail,,1,1,1,1,

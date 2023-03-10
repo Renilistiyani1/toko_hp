@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- toko_hp.pembeli tree view -->
+    <record id="toko_hp_pembeli_view_tree" model="ir.ui.view">
+        <field name="name">Daftar Pembeli</field>
+        <field name="model">toko_hp.pembeli</field>
+        <field name="arch" type="xml">
+            <tree>
+                <!-- Add your fields here -->
+                <field name="name"/>
+                <field name="alamat"/>
+                <field name="no_telepon"/>
+                
+            </tree>
+        </field>
+    </record>
+
+<!-- toko_hp.pembeli form view -->
+    <record id="toko_hp_pembeli_view_form" model="ir.ui.view">
+        <field name="name">Pembeli</field>
+        <field name="model">toko_hp.pembeli</field>
+        <field name="arch" type="xml">
+            <form string="">
+                <sheet>
+                    <group>
+                        <!-- Add your fields here -->
+                        <field name="name"/>
+                        <field name="alamat"/>                        
+                    </group>
+                    <group>
+                        <field name="no_telepon"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+<!-- toko_hp.pembeli action window -->
+    <record id="toko_hp_pembeli_action" model="ir.actions.act_window">
+        <field name="name">Daftar Pembeli</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">toko_hp.pembeli</field>
+        <field name="context">{
+            'search_default_pembelinya':1,
+            'default_is_pembelinya':True,
+        }
+        </field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+<!-- This Menu Item must have a parent and an action -->
+    <menuitem id="toko_hp_pembeli_menu_act" 
+              name="Daftar Pembeli" 
+              parent="toko_hp_pembeli_menu_categ" 
+              action="toko_hp_pembeli_action" 
+              sequence="20"/>     
+
+</odoo>
